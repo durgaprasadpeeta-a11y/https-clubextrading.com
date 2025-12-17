@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClubExTrading — Learn & Trade Smarter</title>
+    <meta
+      name="description"
+      content="ClubExTrading is a modern stock market trading and learning platform. Practice, learn strategies, and grow with a community of traders."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img
+            src="clubextrading-logo.png"
+            alt="ClubexTrading - A stock market trading and training institute"
+          />
+        </div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#learn">Learning</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn ghost" data-scroll-target="#pricing">
+            Sign In
+          </button>
+          <button class="btn primary" data-scroll-target="#pricing">
+            Get Started
+          </button>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="top">
+        <div class="hero-content">
+          <p class="eyebrow">Stock Market • Trading • Education</p>
+          <h1>Trade with confidence. Learn like a pro.</h1>
+          <p class="hero-subtitle">
+            ClubExTrading combines real-time market data, paper trading, and
+            structured courses so you can go from beginner to confident trader
+            without risking real capital.
+          </p>
+          <form class="hero-cta" id="hero-form">
+            <div class="input-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email to get early access"
+                required
+              />
+            </div>
+            <button type="submit" class="btn primary large">
+              Join the waitlist
+            </button>
+          </form>
+          <p class="hero-meta">
+            No spam. Just actionable trading insights and early access updates.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">10K+</span>
+              <span class="stat-label">Community Members</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">120+</span>
+              <span class="stat-label">Video Lessons</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">24/7</span>
+              <span class="stat-label">Market Insights</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glass-card main-card">
+            <div class="card-header">
+              <span>Live Watchlist</span>
+              <span class="status-dot"></span>
+            </div>
+            <div class="watchlist">
+              <div class="watchlist-row" data-symbol="NIFTY">
+                <span class="ticker">NIFTY</span>
+                <span class="price" data-field="price">--</span>
+                <span class="change" data-field="change">Loading…</span>
+              </div>
+              <div class="watchlist-row" data-symbol="BANKNIFTY">
+                <span class="ticker">BANKNIFTY</span>
+                <span class="price" data-field="price">--</span>
+                <span class="change" data-field="change">Loading…</span>
+              </div>
+              <div class="watchlist-row" data-symbol="RELIANCE">
+                <span class="ticker">RELIANCE</span>
+                <span class="price" data-field="price">--</span>
+                <span class="change" data-field="change">Loading…</span>
+              </div>
+              <div class="watchlist-row" data-symbol="TCS">
+                <span class="ticker">TCS</span>
+                <span class="price" data-field="price">--</span>
+                <span class="change" data-field="change">Loading…</span>
+              </div>
+            </div>
+            <div class="mini-chart">
+              <div class="chart-line"></div>
+            </div>
+            <div class="card-footer">
+              <span>Paper Trading Balance</span>
+              <span class="balance">₹1,00,000</span>
+            </div>
+          </div>
+
+          <div class="glass-card secondary-card">
+            <p class="secondary-title">Today's Lesson</p>
+            <p class="secondary-text">
+              How to build a risk-managed intraday strategy using support and
+              resistance zones.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Beginner Friendly</span>
+              <span class="pill">Video + Quiz</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="section" id="features">
+        <div class="section-header">
+          <p class="eyebrow">Platform Features</p>
+          <h2>Everything you need to trade smarter</h2>
+          <p class="section-subtitle">
+            Combine professional-grade tools with structured learning designed
+            for Indian stock market traders.
+          </p>
+        </div>
+
+        <div class="grid features-grid">
+          <div class="feature-card">
+            <div class="icon-badge">📈</div>
+            <h3>Realistic Paper Trading</h3>
+            <p>
+              Practice your strategies with live market-like conditions, virtual
+              capital, and detailed trade analytics.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-badge">🎓</div>
+            <h3>Structured Learning Paths</h3>
+            <p>
+              From basics of candlesticks to advanced options strategies, follow
+              curated roadmaps built by experienced traders.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-badge">🤝</div>
+            <h3>Community & Live Sessions</h3>
+            <p>
+              Join weekly live market sessions, Q&amp;A calls, and a private
+              Discord community of serious traders.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-badge">🛡️</div>
+            <h3>Risk Management First</h3>
+            <p>
+              Built-in position sizing calculators, risk dashboards, and alerts
+              to keep your capital protected.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learning Tracks -->
+      <section class="section muted" id="learn">
+        <div class="section-header">
+          <p class="eyebrow">Learning Tracks</p>
+          <h2>Choose your trading journey</h2>
+          <p class="section-subtitle">
+            Whether you’re just starting or already trading, there’s a path for
+            you at ClubExTrading.
+          </p>
+        </div>
+
+        <div class="grid tracks-grid">
+          <div class="track-card">
+            <h3>Starter: Market Basics</h3>
+            <p>
+              Learn how the Indian stock market works, key terms, order types,
+              and how to read charts.
+            </p>
+            <ul>
+              <li>20+ bite-sized video lessons</li>
+              <li>Basics of price action</li>
+              <li>Simple quizzes &amp; notes</li>
+            </ul>
+            <span class="tag">Perfect for beginners</span>
+          </div>
+          <div class="track-card highlighted">
+            <h3>Intraday &amp; Swing Trading</h3>
+            <p>
+              Master strategies designed for Indian equities and index trading
+              with clear rules and checklists.
+            </p>
+            <ul>
+              <li>Strategy playbooks</li>
+              <li>Live market examples</li>
+              <li>Risk &amp; psychology modules</li>
+            </ul>
+            <span class="tag accent">Most popular</span>
+          </div>
+          <div class="track-card">
+            <h3>Options &amp; Advanced</h3>
+            <p>
+              Learn options basics, spreads, and hedging strategies with a
+              strong focus on risk management.
+            </p>
+            <ul>
+              <li>Options Greeks made simple</li>
+              <li>Backtested setups</li>
+              <li>Assignments &amp; projects</li>
+            </ul>
+            <span class="tag">Coming soon</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="section" id="pricing">
+        <div class="section-header">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple pricing for serious traders</h2>
+          <p class="section-subtitle">
+            Start for free with learning resources, then upgrade when you’re
+            ready for full tools and community access.
+          </p>
+        </div>
+
+        <div class="pricing-toggle">
+          <span class="toggle-label active" data-billing="monthly">Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="billing-toggle" />
+            <span class="slider"></span>
+          </label>
+          <span class="toggle-label" data-billing="yearly">
+            Yearly <span class="save-pill">Save 20%</span>
+          </span>
+        </div>
+
+        <div class="grid pricing-grid">
+          <div class="price-card">
+            <h3>Free</h3>
+            <p class="price">₹0</p>
+            <p class="price-subtitle">Get started with the basics.</p>
+            <ul>
+              <li>Access to Starter track</li>
+              <li>Limited paper trading</li>
+              <li>Weekly newsletter</li>
+            </ul>
+            <button class="btn ghost full" data-scroll-target="#hero-form">
+              Start free
+            </button>
+          </div>
+
+          <div class="price-card highlighted">
+            <h3>Pro Trader</h3>
+            <p class="price" id="pro-price">₹999<span>/month</span></p>
+            <p class="price-subtitle">
+              Full access to tools, tracks, and community.
+            </p>
+            <ul>
+              <li>Unlimited paper trading</li>
+              <li>All learning tracks</li>
+              <li>Discord &amp; live sessions</li>
+              <li>Strategy templates &amp; tools</li>
+            </ul>
+            <a class="btn primary full" href="signup.html">
+              Join Pro
+            </a>
+          </div>
+
+          <div class="price-card">
+            <h3>Teams</h3>
+            <p class="price">Let’s talk</p>
+            <p class="price-subtitle">
+              For institutes, colleges, and trading communities.
+            </p>
+            <ul>
+              <li>Custom learning paths</li>
+              <li>Mentor dashboards</li>
+              <li>Co-branded certificates</li>
+            </ul>
+            <a class="btn ghost full" href="contact.html">Contact us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section muted" id="faq">
+        <div class="section-header">
+          <p class="eyebrow">FAQ</p>
+          <h2>Your questions, answered</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is ClubExTrading a broker?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. ClubExTrading is an educational and simulation platform. We
+                do not execute real trades or handle client funds. You can use
+                our tools and strategies with your preferred broker.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is this suitable for complete beginners?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Our Starter track assumes no prior experience and explains
+                all concepts in simple language with visual examples and quizzes.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you cover the Indian stock market specifically?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Our examples, instruments, and case studies are tailored
+                for NSE &amp; BSE, including popular indices and liquid stocks
+                relevant to Indian traders.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>When will the platform launch?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We’re currently in a private beta with a small set of traders.
+                Join the waitlist above to get early access and launch updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo">
+            <img
+              src="clubextrading-logo.png"
+              alt="ClubexTrading - A stock market trading and training institute"
+            />
+          </div>
+          <p>
+            An educational platform to help you understand and practice trading
+            with a strong focus on risk management.
+          </p>
+        </div>
+
+        <div class="footer-grid">
+          <div>
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div>
+            <h4>Learn</h4>
+            <a href="#learn">Tracks</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div>
+            <h4>Connect</h4>
+            <a href="mailto:hello@clubextrading.com">Email</a>
+            <a href="#">Community (soon)</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> ClubExTrading. All rights reserved.</p>
+        <p class="disclaimer">
+          Trading in the stock market involves risk. Nothing on this platform
+          is financial advice. Please do your own research.
+        </p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

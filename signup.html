@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Pro — ClubExTrading</title>
+    <meta
+      name="description"
+      content="Create your ClubExTrading Pro account to access full tools, learning tracks, and the trading community."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .signup-shell {
+        max-width: 1120px;
+        width: 100%;
+        padding: 1.5rem;
+      }
+      .signup-layout {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+        align-items: center;
+      }
+      .signup-card {
+        border-radius: 22px;
+        border: 1px solid rgba(148, 163, 184, 0.55);
+        background: radial-gradient(
+            circle at top left,
+            rgba(34, 197, 94, 0.24),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(59, 130, 246, 0.24),
+            transparent 55%
+          ),
+          rgba(15, 23, 42, 0.95);
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.92);
+        padding: 1.6rem 1.5rem 1.7rem;
+      }
+      .signup-card h1 {
+        margin: 0 0 0.3rem;
+        font-size: 1.7rem;
+        letter-spacing: -0.03em;
+      }
+      .signup-card p.lead {
+        margin: 0 0 1.2rem;
+        font-size: 0.94rem;
+        color: #9ca3af;
+      }
+      .signup-form {
+        display: grid;
+        gap: 0.8rem;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+      .field label {
+        font-size: 0.8rem;
+        color: #cbd5f5;
+      }
+      .field input {
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.75);
+        background: rgba(15, 23, 42, 0.98);
+        padding: 0.75rem 1rem;
+        color: #e5e7eb;
+        font-size: 0.9rem;
+        outline: none;
+        transition: border-color 0.18s ease, box-shadow 0.18s ease;
+      }
+      .field input::placeholder {
+        color: rgba(148, 163, 184, 0.9);
+      }
+      .field input:focus {
+        border-color: #22c55e;
+        box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.4);
+      }
+      .helper-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.78rem;
+        color: #9ca3af;
+      }
+      .helper-row a {
+        color: #a5b4fc;
+      }
+      .helper-row a:hover {
+        color: #c7d2fe;
+      }
+      .terms {
+        font-size: 0.74rem;
+        color: #9ca3af;
+        margin-top: 0.4rem;
+      }
+      .signup-aside {
+        font-size: 0.86rem;
+        color: #9ca3af;
+      }
+      .signup-aside h2 {
+        margin: 0 0 0.4rem;
+        font-size: 1.05rem;
+      }
+      .signup-aside ul {
+        margin: 0.4rem 0 0.8rem;
+        padding-left: 1.1rem;
+      }
+      .signup-aside li + li {
+        margin-top: 0.18rem;
+      }
+      .signup-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        font-size: 0.8rem;
+        color: #9ca3af;
+        margin-bottom: 0.9rem;
+      }
+      .signup-back span {
+        font-size: 1rem;
+      }
+      .signup-back:hover {
+        color: #e5e7eb;
+      }
+      .signup-logo {
+        margin-bottom: 0.9rem;
+      }
+      .signup-logo img {
+        height: 48px;
+        width: auto;
+        display: block;
+      }
+      @media (max-width: 880px) {
+        body {
+          align-items: flex-start;
+        }
+        .signup-shell {
+          padding-top: 5.5rem;
+        }
+        .signup-layout {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-shell">
+      <a href="index.html#pricing" class="signup-back">
+        <span>←</span> Back to pricing
+      </a>
+
+      <div class="signup-layout">
+        <div class="signup-card">
+          <div class="signup-logo">
+            <img
+              src="clubextrading-logo.png"
+              alt="ClubexTrading - A stock market trading and training institute"
+            />
+          </div>
+          <h1>Join ClubExTrading Pro</h1>
+          <p class="lead">
+            Create your account to access the full trading simulator, all
+            learning tracks and the Pro community.
+          </p>
+
+          <form class="signup-form" id="signup-form">
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="emailSignup">Email</label>
+              <input
+                type="email"
+                id="emailSignup"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a strong password"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="helper-row">
+              <span>Already have an account? <a href="#">Sign in</a></span>
+            </div>
+
+            <button type="submit" class="btn primary full">
+              Continue to payment
+            </button>
+            <p class="terms">
+              By continuing, you agree that this is an educational platform and
+              does not provide financial advice.
+            </p>
+          </form>
+        </div>
+
+        <aside class="signup-aside">
+          <p class="eyebrow">Pro access</p>
+          <h2>What you get with ClubExTrading Pro</h2>
+          <ul>
+            <li>Unlimited paper trading with analytics</li>
+            <li>Access to all current and future learning tracks</li>
+            <li>Weekly Pro-only market review &amp; Q&amp;A</li>
+            <li>Templates, checklists and strategy dashboards</li>
+          </ul>
+          <p>
+            After registration, you’ll complete payment using UPI. Use the UPI
+            ID below from your preferred UPI app and then share the transaction
+            details with ClubexTrading support.
+          </p>
+          <p><strong>UPI ID:</strong> prasadrocks65@ybl</p>
+          <p>
+            Once your payment is confirmed, your Pro account will be activated
+            manually.
+          </p>
+        </aside>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+      const signupForm = document.getElementById("signup-form");
+      const toast = document.getElementById("toast");
+
+      function showToast(message) {
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 2600);
+      }
+
+      if (signupForm) {
+        signupForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const email = document.getElementById("emailSignup").value.trim();
+          if (!email || !email.includes("@") || !email.includes(".")) {
+            showToast("Please enter a valid email address.");
+            return;
+          }
+
+          // For now we simply show payment instructions for the UPI ID.
+          showToast("Signup captured. Pay via UPI ID: prasadrocks65@ybl.");
+
+          // Optional: attempt to open a UPI intent on supported devices.
+          const upiUrl =
+            "upi://pay?pa=prasadrocks65@ybl&pn=ClubexTrading%20Pro&cu=INR";
+          window.location.href = upiUrl;
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
